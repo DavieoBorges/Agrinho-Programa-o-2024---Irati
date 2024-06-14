@@ -16,12 +16,16 @@ header{
 #logotipo{
 	margin:0px;
 	border: solid 4px #111147;
+	display: inline-block;
+	vertical-align: top;
 }
 
 nav li{
 	display: inline;
 	margin:0 0 0 30px;
 	text-align: left;
+	display: inline-block;
+	vertical-align: top;
 
 }
 
@@ -30,15 +34,17 @@ nav a{
 	color: #000000;
 	font-weight: bold;
 	font-size: 29px;
-	text-decoration: none;
-	
-
+	text-decoration: none;	
+	display: inline-block;
+	vertical-align: top;
 }
 
 nav{
 	position: absolute;
 	top: 50px;
 	left: 300px;
+	display: inline-block;
+	vertical-align: top;
 	}
 
 
@@ -50,14 +56,10 @@ nav a:hover{
 
 
 
-.menu h1{
-	color: #111147;
-	border: solid 2px #111147;
-	margin: 2px;
-	position: absolute;
-	font-size: 65px;
-	top:50px;
-	left: 400px
+h1 {
+	display:inline-flex;
+	text-align: center;
+	width: 500px;
 }
 
 .descricao1{
@@ -84,4 +86,10 @@ nav a:hover{
 	width: 500px;
 	margin:30px;
 	text-indent: 10px
+}
+
+p{
+	
+	font-size: 20px
+
 }

@@ -11,7 +11,7 @@ header{
 
 }
 
-#logotipo{
+.logotipo{
 	margin:0px;
 	border: solid 4px #111147;
 	display: inline-block;

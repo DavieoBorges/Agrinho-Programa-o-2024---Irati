@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+header{
+    background:  #3e96df;
+	padding: 20px;
+    position: relative;
+    width: 94em;
+    margin: 0 auto;
+}
+
+.logotipo{
+	margin:0px;
+	border: solid 0.01em #111147;
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav li{
+	display: inline;
+	margin:0 0 0 1em;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 29px;
+	text-decoration: none;	
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav{
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	display: inline-block;
+	vertical-align: top;
+	}
+
+
+nav a:hover{
+	color: #FFFFFF;
+    background-color: #005fad;
+}

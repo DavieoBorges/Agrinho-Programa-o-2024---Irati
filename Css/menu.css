@@ -1,6 +1,7 @@
 header{
 	background:  #3e96df;
 	padding: 20px;
+	right: 1110px;
 }
 
 .caixa{
@@ -11,11 +12,11 @@ header{
 
 }
 
-.logotipo{
-	margin:0px;
+
+#logotipo{
 	border: solid 4px #111147;
 	display: inline-block;
-	vertical-align: top;
+	margin: 15px;
 }
 
 nav li{
@@ -58,24 +59,10 @@ h1 {
 	display:inline-flex;
 	text-align: center;
 	width: 500px;
+	font-size: 30px;
 }
 
-.descricao1{
-	width: 1500px;
-	margin: auto;
 
-}
-
-.conteudo{
-	display: table;
-}
-
-.imagem{
-	display: table-cell;
-	float: left;
-	margin: 15px;
-
-}
 
 .texto{
 
@@ -87,9 +74,9 @@ h1 {
 }
 
 p{
-	
-	font-size: 20px
-
+	padding: 10px;
+	margin: 10px;
+	font-size: 20px;
 }
 
 *{

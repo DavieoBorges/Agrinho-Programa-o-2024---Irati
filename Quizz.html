@@ -3,99 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Interativo</title>
-    <link rel="stylesheet" href="Css/Quizz.css">
+    <title>Quiz sobre Irati</title>
+    <h1><a href="EntradaQuizz.html">Voltar</a></h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #3e96df;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .question h2 {
+            color: #3e96df;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin: 10px 0;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3e96df;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #357abf;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #3e96df;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Quiz sobre Tecnologia na Agricultura, <a href="EntradaQuizz.html">Voltar</a></h1>
-    </header>
-    <main>
-        <section id="quiz">
-            <form>
-                <div class="question">
-                    <h3>1. Qual destas tecnologias é usada para monitorar a saúde do solo?</h3>
-                    <label>
-                        <input type="radio" name="q1" value="a">
-                        Drones
-                    </label>
-                    <label>
-                        <input type="radio" name="q1" value="b">
-                        Sensores de Solo
-                    </label>
-                    <label>
-                        <input type="radio" name="q1" value="c">
-                        Tratores Automatizados
-                    </label>
-                </div>
-
-                <div class="question">
-                    <h3>2. Qual tecnologia permite a irrigação controlada e eficiente?</h3>
-                    <label>
-                        <input type="radio" name="q2" value="a">
-                        GPS Agrícola
-                    </label>
-                    <label>
-                        <input type="radio" name="q2" value="b">
-                        Sistemas de Irrigação Automatizados
-                    </label>
-                    <label>
-                        <input type="radio" name="q2" value="c">
-                        Sensores de Clima
-                    </label>
-                </div>
-
-                <div class="question">
-                    <h3>3. Qual destes é um benefício da agricultura de precisão?</h3>
-                    <label>
-                        <input type="radio" name="q3" value="a">
-                        Maior uso de água
-                    </label>
-                    <label>
-                        <input type="radio" name="q3" value="b">
-                        Menor produtividade
-                    </label>
-                    <label>
-                        <input type="radio" name="q3" value="c">
-                        Redução de custos e aumento de produtividade
-                    </label>
-                </div>
-
-                <button type="button" onclick="mostrarResultado()">Ver Resultado</button>
-            </form>
-            <div id="resultado" style="display: none;">
-                <h3>Seu resultado:</h3>
-                <p id="resultado-texto"></p>
+    <div class="quiz-container">
+        <h1>Quiz sobre Irati</h1>
+        <form id="quizForm">
+            <div class="question">
+                <h2>1. Irati é uma cidade com bastante agricultura envolvida, Irati é a cidade da?</h2>
+                <ul class="options">
+                    <li><label><input type="radio" name="question1" value="a"> a) Batata</label></li>
+                    <li><label><input type="radio" name="question1" value="b"> b) Trigo</label></li>
+                    <li><label><input type="radio" name="question1" value="c"> c) Cenoura</label></li>
+                </ul>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Programa Agrinho</p>
-    </footer>
+            <div class="question">
+                <h2>2. Como Irati foi criada?</h2>
+                <ul class="options">
+                    <li><label><input type="radio" name="question2" value="a"> a) Pelos Portugueses</label></li>
+                    <li><label><input type="radio" name="question2" value="b"> b) Pela grande imigração de poloneses e ucranianos</label></li>
+                    <li><label><input type="radio" name="question2" value="c"> c) Pelos indígenas</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h2>3. Quando começou a mecanização de Irati?</h2>
+                <ul class="options">
+                    <li><label><input type="radio" name="question3" value="a"> a) Década de 1950</label></li>
+                    <li><label><input type="radio" name="question3" value="b"> b) Início do século XX</label></li>
+                    <li><label><input type="radio" name="question3" value="c"> c) Épocas atuais</label></li>
+                </ul>
+            </div>
+            <button type="button" class="submit-btn" onclick="checkAnswers()">Enviar</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
 
     <script>
-        function mostrarResultado() {
-            const respostasCorretas = {
-                q1: 'b',
-                q2: 'b',
-                q3: 'c'
+        function checkAnswers() {
+            const answers = {
+                question1: 'a',
+                question2: 'b',
+                question3: 'a'
             };
+            
+            let score = 0;
+            const form = document.forms['quizForm'];
+            const resultDiv = document.getElementById('result');
 
-            let pontuacao = 0;
-            const respostas = document.querySelectorAll('input[type="radio"]:checked');
-
-            respostas.forEach((resposta) => {
-                if (respostasCorretas[resposta.name] === resposta.value) {
-                    pontuacao++;
+            for (let question in answers) {
+                const userAnswer = form[question].value;
+                if (userAnswer === answers[question]) {
+                    score++;
                 }
-            });
+            }
 
-            const resultadoTexto = document.getElementById('resultado-texto');
-            resultadoTexto.textContent = `Você acertou ${pontuacao} de 3 perguntas.`;
-
-            document.getElementById('resultado').style.display = 'block';
+            const totalQuestions = Object.keys(answers).length;
+            resultDiv.textContent = `Você acertou ${score} de ${totalQuestions} perguntas.`;
         }
     </script>
-
 </body>
 </html>

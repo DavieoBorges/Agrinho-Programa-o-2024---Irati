@@ -1,5 +1,5 @@
 header{
-	background:  #3e96df;
+	background:  #3572EF;
 	padding: 20px;
 	right: 1110px;
 }
@@ -7,9 +7,7 @@ header{
 .caixa{
 	position: relative;
 	width: 1310px;
-	margin: 0 auto;
-
-
+	margin: 0em 0em 0em 0em;
 }
 
 .Imagens{
@@ -20,7 +18,8 @@ header{
 
 
 #logotipo{
-	border: solid 4px #111147;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.171);
 	display: inline-block;
 	margin: 15px;
 }
@@ -42,6 +41,8 @@ nav a{
 	text-decoration: none;	
 	display: inline-block;
 	vertical-align: top;
+	padding: 10px;
+
 }
 
 nav{
@@ -55,7 +56,11 @@ nav{
 
 nav a:hover{
 	color: #FFFFFF;
-	text-decoration: underline;
+	background-color: #235ac7;
+	border-radius: 7px;
+	transition-duration: 0.6s;
+	
+
 
 }
 
@@ -64,7 +69,6 @@ nav a:hover{
 h1 {
 	display:inline-flex;
 	text-align: center;
-
 	font-size: 30px;
 }
 
@@ -85,7 +89,7 @@ p{
 	padding: 10px;
 	margin: 10px;
 	font-size: 20px;
-	text-align: center;
+	justify-content: center;
 }
 
 *{

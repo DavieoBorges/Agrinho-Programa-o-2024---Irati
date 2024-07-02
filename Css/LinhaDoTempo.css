@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+
 }
 .timeline {
     position: relative;
@@ -95,4 +96,9 @@ img {
     .left::before, .right::before {
         left: 60px;
     }
+}
+
+.ImgM{
+    width: 100%;
+
 }

@@ -7,8 +7,19 @@
 	<link rel="stylesheet" href="Css/links.css">
 	<link rel="stylesheet" href="Css/footer.css">
 </head>
+
+<script>
+	window.onscroll = function() {
+		var footer = document.getElementById('footer');
+		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+			footer.style.opacity = 1;
+		} else {
+			footer.style.opacity = 0;
+		}
+	};
+</script>
 <body>
-	<background-image></background-image>
+
  	<header>
  		<div>
 	 		<img id="logotipo" src="Img/logo.jpg">
@@ -37,16 +48,7 @@
         &copy; 2024 Todos os direitos reservados</p>
     </footer>
 </div>
-<script>
-	window.onscroll = function() {
-		var footer = document.getElementById('footer');
-		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-			footer.style.opacity = 1;
-		} else {
-			footer.style.opacity = 0;
-		}
-	};
-</script>
+
 
 <body>
 </html>

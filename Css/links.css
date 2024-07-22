@@ -43,6 +43,7 @@ nav a:hover{
 
 }
 
+<<<<<<< Updated upstream:Css/links.css
 .link:hover{
 	color: #FFFFFF;
 	background-color: #5287f3;
@@ -50,3 +51,19 @@ nav a:hover{
 	transition-duration: 0.6s;
 	text-decoration: none;
 }
+=======
+
+/*
+
+<!--
+	Cores
+		Forte: #050C9C
+		-M+: #235ac7
+		Meio Forte: #3572EF
+		Media: #3ABEF9
+		Fraca: #A7E6FF
+		
+-->
+
+*/
+>>>>>>> Stashed changes:Css/Inicio.css

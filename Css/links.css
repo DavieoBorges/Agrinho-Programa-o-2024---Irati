@@ -43,7 +43,10 @@ nav a:hover{
 
 }
 
-<<<<<<< Updated upstream:Css/links.css
+
+
+/* Seta Voltar*/
+
 .link:hover{
 	color: #FFFFFF;
 	background-color: #5287f3;
@@ -51,19 +54,28 @@ nav a:hover{
 	transition-duration: 0.6s;
 	text-decoration: none;
 }
-=======
 
-/*
+.linkL{
+	margin-left: 30%;
+	background-color: #235ac7;
+	border-radius: 7px;
+}
 
-<!--
-	Cores
-		Forte: #050C9C
-		-M+: #235ac7
-		Meio Forte: #3572EF
-		Media: #3ABEF9
-		Fraca: #A7E6FF
-		
--->
+.linkL:hover{
+	color: #FFFFFF;
+	background-color: #235ac7;
+	border-radius: 7px;
+	transition-duration: 0.6s;
+	text-decoration: none;
+}
 
-*/
->>>>>>> Stashed changes:Css/Inicio.css
+.ImgClique{
+	padding-right: 5%;
+	width: 50px;
+	height: 50px;
+}
+
+.ImgFlecha{
+	width: 40px;
+	height: 20px;
+}

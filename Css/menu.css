@@ -15,8 +15,6 @@ header{
 
 
 
-
-
 h1{
 	display:inline-flex;
 	text-align: center;
@@ -66,7 +64,7 @@ p{
 
 .linkL{
 	margin-left: 30%;
-	background-color: #3ABEF9;
+	background-color: #235ac7;
 	border-radius: 7px;
 }
 

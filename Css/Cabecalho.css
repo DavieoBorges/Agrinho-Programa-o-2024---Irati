@@ -6,7 +6,7 @@ header{
 
 
 .Imagens{
-	width: 200%;
+	width: 230%;
 	height: 230%;
 	display: block;
 	
@@ -41,7 +41,7 @@ body{
 
 p{
 	margin: 10px;
-	font-size: 40px;
+	font-size: 30px;
 	justify-content: center;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;

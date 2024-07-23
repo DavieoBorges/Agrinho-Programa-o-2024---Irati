@@ -36,7 +36,10 @@ nav a:hover{
 	transition-duration: 0.6s;
 
 }
-
+h1 a{
+	color: black;
+	padding: 6px 6px 10px 6px;
+}
 
 
 /* Seta Voltar*/

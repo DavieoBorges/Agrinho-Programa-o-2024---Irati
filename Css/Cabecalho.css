@@ -6,10 +6,9 @@ header{
 
 
 .Imagens{
-	margin-left: 47em;
-	width: 50%;
-	height: 50%;
- 
+	width: 200%;
+	height: 230%;
+	display: block;
 	
 }
 
@@ -27,17 +26,12 @@ h1{
 	font-size: 30px;
 }
 
-h1 a{
-	color: black;
-	padding: 6px 6px 10px 6px;
-}
 
 body{
-	background-color: rgb(243, 241, 238);
+	background-color: rgb(240, 235, 227);
 }
 
 .texto{
-
 	display:table-cell;
 	float: left;
 	width: 500px;
@@ -46,17 +40,15 @@ body{
 }
 
 p{
-	padding: 10px;
 	margin: 10px;
-	font-size: 20px;
+	font-size: 40px;
 	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
 }
 
 *{
 	margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
 }

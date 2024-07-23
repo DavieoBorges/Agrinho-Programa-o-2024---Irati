@@ -17,3 +17,11 @@
 	text-decoration: underline;
 }
 
+.TextoImagem{
+	
+		display: flex;
+		align-items: center;
+	}
+.TextoImagem img {
+		margin-right: 20px;
+	}

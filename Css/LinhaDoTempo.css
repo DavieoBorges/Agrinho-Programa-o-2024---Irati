@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-
+        background-color: rgb(240, 235, 227);
+    
 }
 .timeline {
     position: relative;

@@ -1,6 +1,6 @@
 .footer {
 	background-color: rgba(0, 0, 50.2, 0.5);
-	
+
 	color: white;
 	text-align: center;
 	padding: 10px 0;
@@ -17,11 +17,12 @@
 	text-decoration: underline;
 }
 
-.TextoImagem{
-	
-		display: flex;
-		align-items: center;
-	}
-.TextoImagem img {
-		margin-right: 20px;
-	}
+.TextoImagem
+{
+	display: flex;
+	align-items: center;
+}
+.TextoImagem img 
+{
+	margin-right: 20px;
+}

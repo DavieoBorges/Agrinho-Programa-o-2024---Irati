@@ -1,9 +1,12 @@
+body{
+	background-color: rgb(240, 235, 227);
+}
+
 header{
 	background-image: linear-gradient(#6bcff7, #6b97f7);
 	padding: 20px;
 	right: 1110px;
 }
-
 
 .Imagens{
 	width: 230%;
@@ -18,16 +21,33 @@ header{
 	display: inline-block;
 }
 
-
 h1{
 	display:inline-flex;
 	text-align: center;
 	font-size: 30px;
 }
 
+p{
+	margin: 10px;
+	font-size: 30px;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+}
 
-body{
-	background-color: rgb(240, 235, 227);
+
+.Imagens{
+	width: 50em;
+	height: 40em;
+	display: block;
+	
+}
+
+.logotipo{
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.171);
+	display: inline-block;
+	margin: 20px;
 }
 
 .texto{
@@ -38,13 +58,6 @@ body{
 	text-indent: 10px
 }
 
-p{
-	margin: 10px;
-	font-size: 30px;
-	justify-content: center;
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.5;
-}
 
 *{
 	margin: 0;
